@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<integer name="database_version">1</integer>
+
+	<integer name="request_location_interval">30</integer>
+
+	<integer name="report_call_interval">30</integer>
+	<integer name="report_sms_interval">30</integer>
+	<integer name="report_report_interval">60</integer>
+
+	<integer name="speed_consequent_limit">1000</integer>
+	<integer name="speed_consequent_targets">15</integer>
+
+</resources>

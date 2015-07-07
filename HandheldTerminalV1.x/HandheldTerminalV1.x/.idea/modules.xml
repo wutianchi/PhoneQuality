@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/library/AndroidBootstrap/AndroidBootstrap.iml" filepath="$PROJECT_DIR$/library/AndroidBootstrap/AndroidBootstrap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/PagerSlidingTabStrip/PagerSlidingTabStrip.iml" filepath="$PROJECT_DIR$/library/PagerSlidingTabStrip/PagerSlidingTabStrip.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PhoneQuality.iml" filepath="$PROJECT_DIR$/PhoneQuality.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/PullToRefresh/PullToRefresh.iml" filepath="$PROJECT_DIR$/library/PullToRefresh/PullToRefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/appcompat/appcompat.iml" filepath="$PROJECT_DIR$/library/appcompat/appcompat.iml" />
+    </modules>
+  </component>
+</project>

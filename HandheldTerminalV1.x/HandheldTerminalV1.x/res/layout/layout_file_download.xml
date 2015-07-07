@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+	<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center|bottom">
+
+		<TextView
+				android:textSize="70dp"
+				android:textStyle="bold"
+				android:textColor="@color/mid_red"
+				android:id="@+id/file_download_curr_speed"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/float_zero"
+				android:layout_column="0"/>
+
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/kByteSec"
+				android:id="@+id/file_download_curr_speed_unit"
+				android:textSize="@dimen/font_size_xxlarge"/>
+	</LinearLayout>
+
+	<View
+			android:layout_width="fill_parent"
+			android:layout_height="1px"
+			android:background="@color/mid_grey"
+			android:layout_marginBottom="10dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp"/>
+
+	<TableLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+		<TableRow
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/file_download_max_speed_text"
+					android:layout_column="0"
+					android:layout_weight="1"
+					android:gravity="right"/>
+
+			<TextView
+					android:id="@+id/file_download_max_speed"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/float_zero"
+					android:layout_column="1"
+					android:layout_weight="1"
+					android:gravity="center"/>
+
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/kByteSec"
+					android:layout_column="2"
+					android:id="@+id/file_download_max_speed_unit"
+					android:layout_weight="1.5"/>
+		</TableRow>
+
+		<TableRow
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/file_download_avg_speed_text"
+					android:layout_column="0"
+					android:layout_weight="1"
+					android:gravity="right"/>
+
+			<TextView
+					android:id="@+id/file_download_avg_speed"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/float_zero"
+					android:gravity="center"
+					android:layout_column="1"
+					android:layout_weight="1"/>
+
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/kByteSec"
+					android:layout_column="2"
+					android:id="@+id/file_download_avg_speed_unit"
+					android:layout_weight="1.5"/>
+		</TableRow>
+
+		<TableRow
+				android:id="@+id/TableRow04"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				>
+
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="所用时间"
+					android:layout_column="0"
+					android:layout_weight="1"
+					android:gravity="right"/>
+
+			<TextView
+					android:id="@+id/file_download_used_time"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/zero"
+					android:layout_column="1"
+					android:layout_weight="1"
+					android:gravity="center"/>
+
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/second"
+					android:id="@+id/file_download_used_time_unit"
+					android:layout_column="2"
+					android:layout_weight="1.5"/>
+		</TableRow>
+
+		<TableRow
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+
+			<TextView
+					android:id="@+id/Time"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="已下载"
+					android:layout_column="0"
+					android:layout_weight="1"
+					android:gravity="right"/>
+
+			<TextView
+					android:id="@+id/file_download_downloaded"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/float_zero"
+					android:layout_column="1"
+					android:layout_weight="1"
+					android:gravity="center"/>
+
+			<TextView
+					android:id="@+id/file_download_downloaded_unit"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/filesize_unit"
+					android:layout_column="2"
+					android:layout_weight="1.5"/>
+		</TableRow>
+	</TableLayout>
+
+	<View
+			android:layout_width="fill_parent"
+			android:layout_height="1px"
+			android:background="@color/mid_grey"
+			android:layout_marginTop="10dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp"/>
+
+	<ListView
+			android:id="@+id/file_download_file_block_list"
+			android:layout_width="fill_parent"
+			android:layout_height="1dp"
+			android:paddingTop="10dp"
+			android:orientation="vertical"
+			android:focusable="false">
+	</ListView>
+    <TextView android:id="@+id/tv_evaluate"
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:textSize="22sp"
+              android:text=""/>
+
+	<com.beardedhen.androidbootstrap.BootstrapButton
+			android:id="@+id/file_download_start"
+			android:layout_gravity="center_horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="54dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp"
+			android:layout_marginBottom="20dp"
+			android:text="开始测速"
+			bootstrapbutton:bb_text_gravity="center"
+			bootstrapbutton:bb_roundedCorners="true"
+			bootstrapbutton:bb_type="primary"/>
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.cattsoft.phone.quality.ui.widget.OverScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     android:id="@+id/scrollView"
+                                                     android:orientation="vertical"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent">
+
+	<LinearLayout
+			android:id="@+id/rootView"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+		<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="24dp"
+				android:gravity="center_vertical"
+				android:text="本月短信收发"
+				android:paddingLeft="10.0dip"
+				android:background="@color/pager_background"/>
+
+		<HorizontalScrollView
+				android:layout_width="fill_parent"
+				android:id="@+id/stats_sms_scroll"
+				android:layout_height="@dimen/signal_chart_height_small">
+
+			<FrameLayout
+					android:id="@+id/stats_voice_usage"
+					android:layout_width="fill_parent"
+					android:gravity="center"
+					android:layout_height="fill_parent"
+					android:orientation="horizontal">
+			</FrameLayout>
+		</HorizontalScrollView>
+		<!--<ImageView android:layout_width="fill_parent" android:layout_height="fill_parent"-->
+		<!--android:background="@drawable/separator_line"/>-->
+		<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="24dp"
+				android:gravity="center_vertical"
+				android:text="短信接收排行(Top5)"
+				android:paddingLeft="10.0dip"
+				android:background="@color/pager_background"/>
+
+		<LinearLayout
+				android:id="@+id/stats_voice_prop"
+				android:layout_width="fill_parent"
+				android:gravity="center"
+				android:layout_height="@dimen/signal_chart_height_small"
+				android:orientation="vertical">
+		</LinearLayout>
+
+		<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:orientation="vertical"
+				android:gravity="center_vertical">
+
+			<RelativeLayout
+					android:layout_width="fill_parent"
+					android:layout_height="42.0dip"
+					android:gravity="center_vertical">
+
+				<TextView
+						android:layout_marginLeft="16.0dip"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="本月接收彩信"
+						android:layout_gravity="center_vertical"/>
+
+				<TextView
+						android:layout_marginRight="16.0dip"
+						android:layout_alignParentRight="true"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/prop_sms_mmsg"
+						android:layout_gravity="center_vertical"
+						android:text="未接收"/>
+			</RelativeLayout>
+		</LinearLayout>
+	</LinearLayout>
+</com.cattsoft.phone.quality.ui.widget.OverScrollView>

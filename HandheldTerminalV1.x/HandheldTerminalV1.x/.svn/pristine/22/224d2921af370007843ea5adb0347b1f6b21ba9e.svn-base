@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.cattsoft.phone.quality.ui.widget.OverScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     android:id="@+id/scrollView"
+                                                     android:orientation="vertical"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent">
+
+	<LinearLayout
+			android:id="@+id/rootView"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+		<LinearLayout
+				android:layout_width="fill_parent"
+				android:orientation="horizontal"
+				android:weightSum="3"
+				android:layout_height="@dimen/signal_chart_height_small">
+
+			<LinearLayout
+					android:layout_width="0.0dip"
+					android:layout_weight="1"
+					android:layout_height="fill_parent"
+					android:orientation="vertical"
+					android:gravity="center_vertical">
+
+				<LinearLayout
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+					<RelativeLayout
+							android:layout_width="fill_parent"
+							android:layout_height="42.0dip"
+							android:gravity="center_vertical">
+
+						<TextView
+								android:textColor="@color/text"
+								android:layout_marginLeft="16.0dip"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="平均信号强度"
+								android:layout_centerInParent="true"/>
+					</RelativeLayout>
+
+					<RelativeLayout
+							android:layout_width="fill_parent"
+							android:layout_height="42.0dip"
+							android:gravity="center_vertical">
+
+						<TextView
+								android:layout_marginLeft="16.0dip"
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content"
+								android:text="0 dBm"
+								android:textColor="@color/text_inverted"
+								android:gravity="center_horizontal"
+								android:id="@+id/prop_signal_dbm"
+								android:layout_centerInParent="true"/>
+					</RelativeLayout>
+
+					<RelativeLayout
+							android:layout_width="fill_parent"
+							android:layout_height="42.0dip"
+							android:gravity="center_vertical">
+
+						<TextView
+								android:layout_marginLeft="16.0dip"
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content"
+								android:text="0 asu"
+								android:textColor="@color/text_inverted"
+								android:gravity="center_horizontal"
+								android:id="@+id/prop_signal_asu"
+								android:layout_centerInParent="true"/>
+					</RelativeLayout>
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+					android:id="@+id/levelLayout"
+					android:layout_width="0.0dip"
+					android:layout_weight="2"
+					android:layout_height="fill_parent"
+					android:orientation="vertical"
+					android:gravity="center">
+
+				<ImageView
+						android:id="@+id/prop_signal_level"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:src="@drawable/wifi_d1"/>
+			</LinearLayout>
+		</LinearLayout>
+
+		<ImageView
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:background="@drawable/separator_line"/>
+
+		<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="@dimen/signal_chart_height"
+				android:weightSum="3"
+				android:orientation="horizontal">
+
+			<LinearLayout
+					android:layout_width="0.0dip"
+					android:layout_weight="1"
+					android:layout_height="fill_parent"
+					android:orientation="vertical"
+					android:gravity="center_vertical">
+
+				<RelativeLayout
+						android:layout_width="fill_parent"
+						android:layout_height="42.0dip"
+						android:gravity="center_vertical">
+
+					<TextView
+							android:layout_marginLeft="16.0dip"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="网络占用比例"
+							android:textColor="@color/text"
+							android:layout_centerInParent="true"/>
+				</RelativeLayout>
+
+				<RelativeLayout
+						android:layout_width="fill_parent"
+						android:layout_height="42.0dip"
+						android:gravity="center_vertical">
+
+					<TextView
+							android:layout_marginLeft="16.0dip"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:text="无信号"
+							android:textColor="@color/text"
+							android:layout_gravity="center_vertical"/>
+
+					<TextView
+							android:layout_marginRight="16.0dip"
+							android:layout_alignParentRight="true"
+							android:layout_width="wrap_content"
+							android:textColor="@color/text_inverted"
+							android:layout_height="wrap_content"
+							android:id="@+id/prop_signal_no"
+							android:layout_gravity="center_vertical"
+							android:text="0 %"/>
+				</RelativeLayout>
+
+				<RelativeLayout
+						android:layout_width="fill_parent"
+						android:layout_height="42.0dip"
+						android:gravity="center_vertical">
+
+					<TextView
+							android:layout_marginLeft="16.0dip"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:text="2G"
+							android:textColor="@color/text"
+							android:layout_gravity="center_vertical"/>
+
+					<TextView
+							android:layout_marginRight="16.0dip"
+							android:layout_alignParentRight="true"
+							android:layout_width="wrap_content"
+							android:textColor="@color/text_inverted"
+							android:layout_height="wrap_content"
+							android:id="@+id/prop_signal_2g"
+							android:layout_gravity="center_vertical"
+							android:text="0 %"/>
+				</RelativeLayout>
+
+				<RelativeLayout
+						android:layout_width="fill_parent"
+						android:layout_height="42.0dip"
+						android:gravity="center_vertical">
+
+					<TextView
+							android:layout_marginLeft="16.0dip"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:text="3G"
+							android:textColor="@color/text"
+							android:layout_gravity="center_vertical"/>
+
+					<TextView
+							android:layout_marginRight="16.0dip"
+							android:layout_alignParentRight="true"
+							android:layout_width="wrap_content"
+							android:textColor="@color/text_inverted"
+							android:layout_height="wrap_content"
+							android:id="@+id/prop_signal_3g"
+							android:layout_gravity="center_vertical"
+							android:text="0 %"/>
+				</RelativeLayout>
+
+				<RelativeLayout
+						android:layout_width="fill_parent"
+						android:layout_height="42.0dip"
+						android:id="@+id/prop_signal_4g_layout"
+						android:gravity="center_vertical"
+						android:visibility="gone">
+
+					<TextView
+							android:layout_marginLeft="16.0dip"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:text="4G"
+							android:textColor="@color/text"
+							android:layout_gravity="center_vertical"/>
+
+					<TextView
+							android:layout_marginRight="16.0dip"
+							android:layout_alignParentRight="true"
+							android:layout_width="wrap_content"
+							android:textColor="@color/text_inverted"
+							android:layout_height="wrap_content"
+							android:id="@+id/prop_signal_4g"
+							android:layout_gravity="center_vertical"
+							android:text="0 %"/>
+				</RelativeLayout>
+			</LinearLayout>
+
+			<LinearLayout
+					android:id="@+id/propLayout"
+					android:layout_width="0.0dip"
+					android:layout_weight="2"
+					android:layout_height="fill_parent"
+					android:orientation="horizontal"
+					android:gravity="center">
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+</com.cattsoft.phone.quality.ui.widget.OverScrollView>

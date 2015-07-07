@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dial_type_top">80dp</dimen>
+    <dimen name="dial_type_ssid_top">100dp</dimen>
+    <dimen name="dial_speed_top">150dp</dimen>
+    <dimen name="dial_unit_top">190dp</dimen>
+</resources>

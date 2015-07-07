@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.roboguice:roboguice:3.0-alpha-2">
+    <CLASSES>
+      <root url="jar://C:/Users/yushiwei/.m2/repository/org/roboguice/roboguice/3.0-alpha-2/roboguice-3.0-alpha-2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://C:/Users/yushiwei/.m2/repository/org/roboguice/roboguice/3.0-alpha-2/roboguice-3.0-alpha-2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://C:/Users/yushiwei/.m2/repository/org/roboguice/roboguice/3.0-alpha-2/roboguice-3.0-alpha-2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

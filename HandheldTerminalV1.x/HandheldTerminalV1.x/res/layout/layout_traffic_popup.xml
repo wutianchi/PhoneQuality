@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:id="@+id/popup_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+	<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_centerVertical="true"
+			android:layout_margin="5dp"
+			android:paddingLeft="13.329987dip"
+			android:paddingRight="13.329987dip"
+			android:background="@drawable/traffic_used_shape">
+
+		<ScrollView
+				android:orientation="vertical"
+				android:id="@+id/scrollView"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1.0">
+
+			<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="20.0dip">
+
+				<TextView
+						android:id="@+id/setting_step_guid"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="13.329987dip"
+						android:textColor="@color/text"
+						android:text="如果您知道当前流量，请直接输入修改"/>
+
+				<LinearLayout
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+
+					<TextView
+							android:gravity="center"
+							android:id="@+id/title_text"
+							android:layout_width="wrap_content"
+							android:layout_height="match_parent"
+							android:text="本月已用"/>
+
+					<FrameLayout
+							android:layout_width="0.0dip"
+							android:layout_height="wrap_content"
+							android:layout_weight="1.0">
+
+						<EditText
+								android:id="@+id/et_used"
+								android:layout_width="fill_parent"
+								android:textColor="@color/text_inverted"
+								android:layout_height="wrap_content"
+								android:inputType="numberDecimal"
+								android:textCursorDrawable="@null"
+								android:singleLine="true">
+
+							<requestFocus/>
+						</EditText>
+
+						<TextView
+								android:layout_gravity="right|center"
+								android:paddingRight="8.0dip"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="M"/>
+					</FrameLayout>
+				</LinearLayout>
+
+				<LinearLayout
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:paddingTop="5.0dip">
+
+					<TextView
+							android:gravity="center"
+							android:layout_width="wrap_content"
+							android:layout_height="match_parent"
+							android:text="套餐限额"/>
+
+					<FrameLayout
+							android:layout_width="0.0dip"
+							android:layout_height="wrap_content"
+							android:layout_weight="1.0">
+
+						<EditText
+								android:id="@+id/et_pack"
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content"
+								android:textColor="@color/text_inverted"
+								android:inputType="numberSigned"
+								android:textCursorDrawable="@null"
+								android:singleLine="true"/>
+
+						<TextView
+								android:layout_gravity="right|center"
+								android:paddingRight="8.0dip"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="M"/>
+					</FrameLayout>
+				</LinearLayout>
+
+				<LinearLayout
+						android:layout_gravity="right"
+						android:id="@+id/month_check_text"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="13.329987dip">
+
+					<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="不知道流量？"/>
+
+					<TextView
+							android:layout_gravity="right"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="短信查询"/>
+				</LinearLayout>
+			</LinearLayout>
+
+		</ScrollView>
+
+		<com.beardedhen.androidbootstrap.BootstrapButton
+				android:id="@+id/dismiss"
+				android:layout_gravity="center_horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="54dp"
+				android:layout_marginLeft="20dp"
+				android:layout_marginRight="20dp"
+				android:layout_marginBottom="10dp"
+				android:text="确定"
+				bootstrapbutton:bb_text_gravity="center"
+				bootstrapbutton:bb_roundedCorners="true"
+				bootstrapbutton:bb_type="primary"/>
+	</LinearLayout>
+
+</RelativeLayout>

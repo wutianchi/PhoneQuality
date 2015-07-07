@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/file_download_block_layout">
+
+	<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="left">
+
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text="第一个文件块进度"
+				android:id="@+id/file_download_block_name"
+				android:textSize="13dp"
+				android:paddingLeft="20dp"
+				android:paddingRight="20dp"/>
+
+		<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text=""
+				android:id="@+id/file_download_block_error"
+				android:textSize="13dp"
+				android:gravity="right"
+				android:paddingRight="20dp"
+				android:textColor="@color/red"/>
+	</LinearLayout>
+
+	<ProgressBar
+			style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/file_download_block_progress_bar"
+			android:minHeight="14dp"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:clickable="false"
+			android:max="100"
+			android:paddingLeft="20dp"
+			android:paddingRight="20dp"
+			android:mirrorForRtl="false"/>
+</LinearLayout>

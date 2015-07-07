@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.cattsoft.phone.quality.ui.widget.OverScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     android:id="@+id/scrollView"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent">
+
+	<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+		<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="24dp"
+				android:gravity="center_vertical"
+				android:text="当天掉话率"
+				android:paddingLeft="10.0dip"
+				android:background="@color/pager_background"/>
+
+		<LinearLayout
+				android:id="@+id/dcr_today"
+				android:layout_width="fill_parent"
+				android:layout_height="@dimen/signal_chart_height"
+				android:orientation="vertical"
+				android:gravity="center">
+
+		</LinearLayout>
+
+		<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="24dp"
+				android:gravity="center_vertical"
+				android:text="本月掉话率"
+				android:paddingLeft="10.0dip"
+				android:background="@color/pager_background"/>
+
+		<LinearLayout
+				android:id="@+id/dcr_month"
+				android:layout_width="fill_parent"
+				android:layout_height="@dimen/signal_chart_height"
+				android:orientation="vertical"
+				android:gravity="center">
+
+		</LinearLayout>
+
+		<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:orientation="vertical"
+				android:gravity="center_vertical">
+
+			<RelativeLayout
+					android:layout_width="fill_parent"
+					android:layout_height="42.0dip"
+					android:gravity="center_vertical">
+
+				<TextView
+						android:layout_marginLeft="16.0dip"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="今天掉话次数"
+						android:layout_gravity="center_vertical"/>
+
+				<TextView
+						android:layout_marginRight="16.0dip"
+						android:layout_alignParentRight="true"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/prop_today"
+						android:layout_gravity="center_vertical"
+						android:text="0 次"/>
+			</RelativeLayout>
+
+			<RelativeLayout
+					android:layout_width="fill_parent"
+					android:layout_height="42.0dip"
+					android:gravity="center_vertical">
+
+				<TextView
+						android:layout_marginLeft="16.0dip"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="本月掉话次数"
+						android:layout_gravity="center_vertical"/>
+
+				<TextView
+						android:layout_marginRight="16.0dip"
+						android:layout_alignParentRight="true"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/prop_month"
+						android:layout_gravity="center_vertical"
+						android:text="0 次"/>
+			</RelativeLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+</com.cattsoft.phone.quality.ui.widget.OverScrollView>

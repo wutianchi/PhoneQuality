@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.cattsoft.phone.quality.ui.widget.OverScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content">
+
+	<LinearLayout
+			android:id="@+id/rootView"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+		<FrameLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/pager_background">
+
+			<ImageView
+					android:id="@+id/geoImage"
+					android:layout_height="wrap_content"
+					android:adjustViewBounds="true"
+					android:layout_width="fill_parent"
+					android:minHeight="220.0dip"/>
+
+			<FrameLayout
+					android:gravity="center_horizontal"
+					android:orientation="vertical"
+					android:id="@+id/geoMask"
+					android:background="#06000000"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+				<LinearLayout
+						style="@style/GenericProgressBackground"
+						android:id="@+id/loadingPanel"
+						android:orientation="horizontal">
+
+					<ProgressBar style="@style/GenericProgressIndicator"/>
+
+					<TextView
+							android:layout_marginLeft="5.0dip"
+							android:textColor="@color/text_inverted"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="正在获取位置信息"/>
+				</LinearLayout>
+				<!--<ImageView android:id="@+id/geoMaskImg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center"/>-->
+			</FrameLayout>
+		</FrameLayout>
+
+
+		<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+			<RelativeLayout
+					android:layout_width="fill_parent"
+					android:layout_height="42.0dip"
+					android:gravity="center_vertical">
+
+				<TextView
+						android:layout_marginLeft="16.0dip"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="位置"
+						android:textColor="@color/text"
+						android:layout_gravity="center_vertical"/>
+
+				<TextView
+						android:layout_marginRight="16.0dip"
+						android:layout_alignParentRight="true"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/address"
+						android:textColor="@color/text_inverted"
+						android:layout_gravity="center_vertical"/>
+			</RelativeLayout>
+
+			<RelativeLayout
+					android:layout_width="fill_parent"
+					android:layout_height="42.0dip"
+					android:gravity="center_vertical">
+
+				<TextView
+						android:layout_marginLeft="16.0dip"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="位置经度"
+						android:textColor="@color/text"
+						android:layout_gravity="center_vertical"/>
+
+				<TextView
+						android:layout_marginRight="16.0dip"
+						android:layout_alignParentRight="true"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/longitude"
+						android:textColor="@color/text_inverted"
+						android:layout_gravity="center_vertical"/>
+			</RelativeLayout>
+
+			<RelativeLayout
+					android:layout_width="fill_parent"
+					android:layout_height="42.0dip"
+					android:gravity="center_vertical">
+
+				<TextView
+						android:layout_marginLeft="16.0dip"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="位置纬度"
+						android:textColor="@color/text"
+						android:layout_gravity="center_vertical"/>
+
+				<TextView
+						android:layout_marginRight="16.0dip"
+						android:layout_alignParentRight="true"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/latitude"
+						android:textColor="@color/text_inverted"
+						android:layout_gravity="center_vertical"/>
+			</RelativeLayout>
+
+			<RelativeLayout
+					android:layout_width="fill_parent"
+					android:layout_height="42.0dip"
+					android:gravity="center_vertical">
+
+				<TextView
+						android:layout_marginLeft="16.0dip"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="更新时间"
+						android:textColor="@color/text"
+						android:layout_gravity="center_vertical"/>
+
+				<TextView
+						android:layout_marginRight="16.0dip"
+						android:layout_alignParentRight="true"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textColor="@color/text_inverted"
+						android:layout_gravity="center_vertical"
+						android:id="@+id/date"/>
+			</RelativeLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+</com.cattsoft.phone.quality.ui.widget.OverScrollView>

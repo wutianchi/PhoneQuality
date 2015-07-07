@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 报文格式配置 -->
+
+	<string name="report_file_encoding">GB2312</string>
+
+	<!--报文类型-->
+	<string name="report_type_cell">cells</string>
+	<string name="report_type_sms">sms</string>
+	<string name="report_type_call">calls</string>
+	<string name="report_type_speed">speed</string>
+	<string name="report_type_wifi">wifi</string>
+
+	<!-- REPORT_CELLS_20131106180930.data -->
+	<!-- 报文数据文件检查规则，符合规则的将上传 -->
+	<string name="report_file_matcher"><![CDATA[^\\d+_PHONE_REPORT_\\w+\\.(?i)zip$]]></string>
+
+	<string name="report_filename">PHONE_REPORT_{_type}_{timestamp}.data</string>
+	<string name="report_filename_zip">{timestamp}_PHONE_REPORT_{_type}.zip</string>
+	<!-- 基站报文 -->
+	<string name="report_format_cells"><![CDATA[+++BEGIN{ln}type={type}{ln}datetime={datetime}{ln}uid={uid}{ln}operatorCode={operatorCode}{ln}phoneType={phoneType}{ln}mobileType={mobileType}{ln}mcc={mcc}{ln}mnc={mnc}{ln}lac={lac}{ln}cid={cid}{ln}rssi={rssi}{ln}longitude={longitude}{ln}latitude={latitude}{ln}province={province}{ln}cityCode={cityCode}{ln}address={address}{ln}p1={p1}{ln}p2={p2}{ln}p3={p3}{ln}neighboring:{ln}{neighborings}{ln}---END{ln}{ln}]]></string>
+	<!-- 网络速率 -->
+	<string name="report_format_speed"><![CDATA[+++BEGIN{ln}type={type}{ln}datetime={datetime}{ln}uid={uid}{ln}operatorCode={operatorCode}{ln}phoneType={phoneType}{ln}mobileType={mobileType}{ln}mcc={mcc}{ln}mnc={mnc}{ln}networkType={networkType}{ln}longitude={longitude}{ln}latitude={latitude}{ln}province={province}{ln}cityCode={cityCode}{ln}speed={speed}{ln}address={address}{ln}p1={p1}{ln}p2={p2}{ln}p3={p3}{ln}---END{ln}{ln}]]></string>
+	<!-- 掉话率 -->
+	<string name="report_format_calls"><![CDATA[+++BEGIN{ln}type={type}{ln}datetime={datetime}{ln}uid={uid}{ln}operatorCode={operatorCode}{ln}mcc={mcc}{ln}mnc={mnc}{ln}phoneType={phoneType}{ln}mobileType={mobileType}{ln}longitude={longitude}{ln}latitude={latitude}{ln}province={province}{ln}cityCode={cityCode}{ln}start={startTime}{ln}end={endTime}{ln}cause={cause}{ln}ctype={ctype}{ln}count={count}{ln}address={address}{ln}p1={p1}{ln}p2={p2}{ln}p3={p3}{ln}---END{ln}{ln}]]></string>
+	<!-- 短信失败 -->
+	<string name="report_format_sms"><![CDATA[+++BEGIN{ln}type={type}{ln}datetime={datetime}{ln}uid={uid}{ln}operatorCode={operatorCode}{ln}mcc={mcc}{ln}mnc={mnc}{ln}phoneType={phoneType}{ln}mobileType={mobileType}{ln}longitude={longitude}{ln}latitude={latitude}{ln}province={province}{ln}cityCode={cityCode}{ln}start={startTime}{ln}end={endTime}{ln}stype={stype}{ln}count={count}{ln}address={address}{ln}p1={p1}{ln}p2={p2}{ln}p3={p3}{ln}---END{ln}{ln}]]></string>
+	<!-- Wifi热点 -->
+	<string name="report_format_wifi"><![CDATA[+++BEGIN{ln}type={type}{ln}datetime={datetime}{ln}uid={uid}{ln}ssid={ssid}{ln}bssid={bssid}{ln}capabilities={capabilities}{ln}level={level}{ln}frequency={frequency}{ln}longitude={longitude}{ln}latitude={latitude}{ln}province={province}{ln}cityCode={cityCode}{ln}address={address}{ln}p1={p1}{ln}p2={p2}{ln}p3={p3}{ln}---END{ln}{ln}]]></string>
+
+</resources>

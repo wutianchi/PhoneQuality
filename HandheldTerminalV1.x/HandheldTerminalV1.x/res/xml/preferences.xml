@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="pref_key_storage_settings"
+        android:title="数据上报">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_key_report_enable"
+            android:summaryOff="数据上报已关闭"
+            android:summaryOn="将自动上报采集的数据"
+            android:title="数据上报"/>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:dependency="pref_key_report_enable"
+            android:key="pref_key_report_policy"
+            android:summaryOff="当手机连接到网络时上传数据"
+            android:summaryOn="将只在手机连接到Wi-Fi时才上传数据"
+            android:title="上传策略"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_key_speed_settings"
+        android:title="网络测速">
+        <CheckBoxPreference
+            android:title="测速服务类型"
+            android:key="pref_key_bandwidth_option"
+            android:summary="可选择是否使用网络文件进行测速"
+            android:summaryOff="使用测速服务器"
+            android:summaryOn="使用网络文件地址"
+            android:defaultValue="false"/>
+        <EditTextPreference
+            android:key="pref_key_speed_server"
+            android:summary="设置网络测速服务器地址"
+            android:defaultValue="@string/speed_server"
+            android:title="测速服务器"
+            />
+        <EditTextPreference
+            android:key="pref_key_speed_url"
+            android:dependency="pref_key_bandwidth_option"
+            android:summary="编辑该地址设置网络测速URL"
+            android:defaultValue="@string/speed_bandwidth_url"
+            android:title="网络测速地址"/>
+    </PreferenceCategory>
+    <!--<PreferenceCategory android:title="关于">-->
+    <!--<PreferenceScreen-->
+    <!--android:key="pref_key_about"-->
+    <!--android:title="关于我们">-->
+    <!--<intent android:action=".AboutActivity"/>-->
+    <!--</PreferenceScreen>-->
+    <!--</PreferenceCategory>-->
+</PreferenceScreen>

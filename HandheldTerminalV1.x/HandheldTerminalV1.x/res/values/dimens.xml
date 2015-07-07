@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="menu_notify_margin">10dp</dimen>
+
+	<dimen name="chart_label_textsize">10.0sp</dimen>
+	<dimen name="chart_value_textsize">12.0sp</dimen>
+	<dimen name="chart_legend_textsize">10.0sp</dimen>
+
+	<dimen name="font_size_xxlarge">20.0sp</dimen>
+	<dimen name="font_size_xlarge">18.0sp</dimen>
+	<dimen name="font_size_large">16.0sp</dimen>
+	<dimen name="font_size_medium">14.0sp</dimen>
+	<dimen name="font_size_small">12.0sp</dimen>
+	<dimen name="font_size_micro">10.0sp</dimen>
+
+	<item name="bar_chart_spacing_max" format="float" type="dimen">-0.45</item>
+	<item name="bar_chart_spacing" format="float" type="dimen">-0.5</item>
+
+	<dimen name="signal_chart_height">220dp</dimen>
+	<dimen name="signal_chart_height_small">200dp</dimen>
+	<dimen name="signal_chart_height_medium">260dp</dimen>
+	<dimen name="chart_height_micro">120dp</dimen>
+
+	<dimen name="dial_type_top">50dp</dimen>
+	<dimen name="dial_type_ssid_top">70dp</dimen>
+	<dimen name="dial_speed_top">120dp</dimen>
+	<dimen name="dial_unit_top">160dp</dimen>
+
+	<dimen name="info_list_item_height">42.0dip</dimen>
+	<dimen name="list_item_height">62.0dip</dimen>
+	<dimen name="list_item_width">320.0dip</dimen>
+
+	<dimen name="padding1">2.0dip</dimen>
+	<dimen name="padding1b">4.0dip</dimen>
+	<dimen name="padding2">5.0dip</dimen>
+	<dimen name="padding2b">8.0dip</dimen>
+	<dimen name="padding3">10.0dip</dimen>
+	<dimen name="padding3b">12.0dip</dimen>
+</resources>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.cattsoft.phone.quality.ui.widget.OverScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                                     xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+                                                     android:id="@+id/scrollView"
+                                                     android:orientation="vertical"
+                                                     android:layout_width="match_parent"
+                                                     android:layout_height="match_parent">
+
+	<LinearLayout
+			android:id="@+id/rootView"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+		<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+
+			<FrameLayout
+					android:paddingLeft="7.0dip"
+					android:paddingRight="7.0dip"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/traffic_progress_layout"
+					android:clickable="true">
+
+				<ImageView
+						android:layout_gravity="center"
+						android:id="@+id/gprs_percent_image_middle"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:src="@drawable/content_top_bg_03_usage_02"/>
+
+				<com.cattsoft.phone.quality.ui.widget.ProgressWheel
+						android:id="@+id/traffic_progress"
+						android:layout_gravity="center"
+						ProgressWheel:rimColor="@color/traffic_rim_color"
+						ProgressWheel:barColor="@color/traffic_bar_color_blue"
+						ProgressWheel:contourColor="@color/traffic_rim_color"
+						ProgressWheel:contourSize="0dp"
+						ProgressWheel:delayMillis="3000"
+						android:layout_width="136.0dp"
+						android:layout_height="136.0dp"/>
+			</FrameLayout>
+
+			<FrameLayout
+					android:layout_gravity="center"
+					android:orientation="vertical"
+					android:id="@+id/layout_label"
+					android:paddingRight="13.329987dip"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent">
+
+				<LinearLayout
+						android:gravity="center"
+						android:layout_gravity="center"
+						android:orientation="vertical"
+						android:id="@+id/layout_gprs_used_for_month"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+
+					<LinearLayout
+							android:gravity="center_vertical"
+							android:paddingBottom="4.0dip"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content">
+
+						<ImageView
+								android:id="@+id/gprs_month_use_tag"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginRight="5.0dip"
+								android:src="@drawable/content_top_icon_blue"/>
+
+						<TextView
+								android:gravity="center_vertical"
+								android:id="@+id/gprs_used_for_month_title"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="本月已用"/>
+
+						<TextView
+								android:id="@+id/gprs_used_for_month"
+								android:paddingLeft="5.0dip"
+								android:layout_width="0.0dip"
+								android:text="0M"
+								android:layout_height="wrap_content"
+								android:layout_weight="1.0"/>
+					</LinearLayout>
+
+					<LinearLayout
+							android:gravity="center_vertical"
+							android:paddingBottom="4.0dip"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content">
+
+						<ImageView
+								android:id="@+id/gprs_month_use_tag_null"
+								android:visibility="invisible"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginRight="5.0dip"
+								android:src="@drawable/content_top_icon_blue"/>
+
+						<TextView
+								android:gravity="center_vertical"
+								android:id="@+id/gprs_retail_for_month_hint"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="流量套餐"/>
+
+						<TextView
+								android:id="@+id/gprs_retail_for_month"
+								android:paddingLeft="5.0dip"
+								android:text="0M"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"/>
+					</LinearLayout>
+				</LinearLayout>
+
+				<TextView
+						android:gravity="right|center"
+						android:layout_gravity="bottom"
+						android:id="@+id/tips_not_currect_text"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="2.0dip"
+						android:paddingRight="8.0dip"
+						android:layout_marginBottom="13.329987dip"
+						android:textSize="12.0sp"
+						android:text="流量不准 ?"
+						android:drawablePadding="5.0dip"/>
+			</FrameLayout>
+
+		</LinearLayout>
+
+		<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="24dp"
+				android:gravity="center_vertical"
+				android:text="本月流量使用"
+				android:paddingLeft="10.0dip"
+				android:background="@color/pager_background_alternate"/>
+
+		<HorizontalScrollView
+				android:gravity="center_horizontal"
+				android:layout_gravity="center"
+				android:id="@+id/srollGPRSView"
+				android:layout_width="fill_parent"
+				android:layout_height="@dimen/signal_chart_height">
+
+			<FrameLayout
+					android:gravity="center_horizontal"
+					android:orientation="vertical"
+					android:id="@+id/traffic_charts"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"/>
+		</HorizontalScrollView>
+
+		<!--<ImageView android:layout_width="fill_parent" android:layout_height="fill_parent"-->
+		<!--android:background="@drawable/separator_line"/>-->
+
+		<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:orientation="vertical"
+				android:gravity="center_vertical">
+
+			<RelativeLayout
+					android:layout_width="fill_parent"
+					android:layout_height="42.0dip"
+					android:gravity="center_vertical"
+					android:clickable="false"
+					android:focusable="false">
+
+				<RelativeLayout
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent"
+						android:layout_marginTop="1dp"
+						android:layout_marginBottom="1dp"
+						android:gravity="center_vertical"
+						android:focusable="true"
+						android:clickable="true"
+						android:background="@drawable/info_item_background_selector"
+						android:id="@+id/traffic_detail_layout">
+
+					<TextView
+							android:layout_marginLeft="16.0dip"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:text="流量详单"
+							android:layout_gravity="center_vertical"/>
+
+					<ImageView
+							android:layout_marginRight="16.0dip"
+							android:layout_alignParentRight="true"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:src="@drawable/arrow"
+							android:layout_gravity="center_vertical"/>
+				</RelativeLayout>
+			</RelativeLayout>
+
+			<RelativeLayout
+					android:layout_width="fill_parent"
+					android:layout_height="42.0dip"
+					android:gravity="center_vertical">
+
+				<RelativeLayout
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent"
+						android:layout_marginTop="1dp"
+						android:layout_marginBottom="1dp"
+						android:gravity="center_vertical"
+						android:focusable="true"
+						android:clickable="true"
+						android:background="@drawable/info_item_background_selector"
+						android:id="@+id/traffic_apps_layout">
+
+					<TextView
+							android:layout_marginLeft="16.0dip"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:text="应用流量使用"
+							android:layout_gravity="center_vertical"/>
+
+					<ImageView
+							android:layout_marginRight="16.0dip"
+							android:layout_alignParentRight="true"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:src="@drawable/arrow"
+							android:layout_gravity="center_vertical"/>
+				</RelativeLayout>
+			</RelativeLayout>
+
+			<RelativeLayout
+					android:layout_width="fill_parent"
+					android:layout_height="42.0dip"
+					android:gravity="center_vertical"
+					android:visibility="gone">
+
+				<TextView
+						android:layout_marginLeft="16.0dip"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="当前网络速度"
+						android:layout_gravity="center_vertical"/>
+
+				<TextView
+						android:layout_marginRight="16.0dip"
+						android:layout_alignParentRight="true"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/traffic_speed"
+						android:layout_gravity="center_vertical"
+						android:text="0.0 kb/s"/>
+			</RelativeLayout>
+
+			<RelativeLayout
+					android:layout_width="fill_parent"
+					android:layout_height="42.0dip"
+					android:gravity="center_vertical"
+					android:visibility="gone">
+
+				<TextView
+						android:layout_marginLeft="16.0dip"
+						android:layout_width="fill_parent"
+						android:id="@+id/traffic_net_type"
+						android:layout_height="wrap_content"
+						android:text="WiFi/Mobile连接"
+						android:layout_gravity="center_vertical"/>
+
+				<TextView
+						android:layout_marginRight="16.0dip"
+						android:layout_alignParentRight="true"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/traffic_net_status"
+						android:layout_gravity="center_vertical"
+						android:text="未连接"/>
+			</RelativeLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+
+</com.cattsoft.phone.quality.ui.widget.OverScrollView>

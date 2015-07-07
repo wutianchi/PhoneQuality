@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+	<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_centerInParent="true"
+			android:layout_margin="10dp">
+
+		<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/speed_detail_shape"
+				android:orientation="vertical"
+				android:layout_centerVertical="true">
+
+			<TextView
+					android:textSize="22.0dip"
+					android:ellipsize="end"
+					android:gravity="left"
+					android:id="@+id/resultDetailText"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="26.0dip"
+					android:layout_marginTop="10dp"
+					android:layout_marginBottom="20dp"
+					android:layout_marginRight="10.0dip"
+					android:text="测速详情"
+					android:lines="1"/>
+
+			<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+
+				<RelativeLayout
+						android:id="@+id/downloadLayout"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+
+					<ImageView
+							android:id="@+id/icon"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="20.0dip"
+							android:layout_marginTop="2.0dip"
+							android:src="@drawable/result_detail_ic_download"/>
+
+					<TextView
+							android:textSize="13.0dip"
+							android:ellipsize="end"
+							android:gravity="left"
+							android:id="@+id/downloadText"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="59.0dip"
+							style="@style/SpeedResultValue"
+							android:layout_marginTop="0.0dip"
+							android:text="下载"
+							android:lines="1"/>
+
+					<TextView
+							android:id="@+id/downloadValueText"
+							style="@style/SpeedResultDetailValue"/>
+
+					<TextView
+							android:textSize="15.0dip"
+							android:id="@+id/downloadSpeedUnit"
+							android:text="@string/kbitSec"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="5.0dip"
+							android:layout_marginTop="21.0dip"
+							android:layout_toRightOf="@id/downloadValueText"/>
+				</RelativeLayout>
+
+				<RelativeLayout
+						android:id="@+id/uploadLayout"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="22.0dip">
+
+					<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="20.0dip"
+							android:layout_marginTop="2.0dip"
+							android:src="@drawable/result_detail_ic_upload"/>
+
+					<TextView
+							android:textSize="13.0dip"
+							android:ellipsize="end"
+							android:gravity="left"
+							android:id="@+id/uploadText"
+							android:layout_width="fill_parent"
+							style="@style/SpeedResultValue"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="59.0dip"
+							android:layout_marginTop="0.0dip"
+							android:text="上传"
+							android:lines="1"/>
+
+					<TextView
+							android:id="@+id/uploadValueText"
+							style="@style/SpeedResultDetailValue"/>
+
+					<TextView
+							android:textSize="15.0dip"
+							android:id="@+id/uploadSpeedUnit"
+							android:text="@string/kbitSec"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="5.0dip"
+							android:layout_marginTop="21.0dip"
+							android:layout_toRightOf="@id/uploadValueText"/>
+				</RelativeLayout>
+
+				<RelativeLayout
+						android:id="@+id/pingLayout"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="21.0dip">
+
+					<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="20.0dip"
+							android:layout_marginTop="2.0dip"
+							android:src="@drawable/result_detail_ic_ping"/>
+
+					<TextView
+							android:textSize="13.0dip"
+							android:ellipsize="end"
+							android:gravity="left"
+							android:id="@+id/pingText"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="59.0dip"
+							style="@style/SpeedResultValue"
+							android:layout_marginTop="0.0dip"
+							android:text="时延"
+							android:lines="1"/>
+
+					<TextView
+							android:id="@+id/pingValueText"
+							style="@style/SpeedResultDetailValue"/>
+
+					<TextView
+							android:textSize="15.0dip"
+							android:id="@+id/pingSpeedUnit"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="5.0dip"
+							android:layout_marginTop="21.0dip"
+							android:text="ms"
+							android:layout_toRightOf="@id/pingValueText"/>
+				</RelativeLayout>
+
+				<RelativeLayout
+						android:id="@+id/serverLocationLayout"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="20.0dip">
+
+					<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="20.0dip"
+							android:layout_marginTop="0.0dip"
+							android:src="@drawable/result_detail_ic_sever"/>
+
+					<TextView
+							android:textSize="13.0dip"
+							android:ellipsize="end"
+							android:gravity="left"
+							android:id="@+id/serverLocationText"
+							android:layout_width="fill_parent"
+							style="@style/SpeedResultValue"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="59.0dip"
+							android:layout_marginTop="0.0dip"
+							android:text="服务器"
+							android:lines="1"/>
+
+					<TextView
+							android:textSize="16.0dip"
+							android:ellipsize="end"
+							android:gravity="left"
+							android:id="@+id/serverLocationValueText"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="59.0dip"
+							style="@style/SpeedResultDetailValue"
+							android:layout_marginTop="19.0dip"
+							android:lines="1"/>
+				</RelativeLayout>
+
+				<RelativeLayout
+						android:id="@+id/clientLocationLayout"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="16.0dip">
+
+					<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="20.0dip"
+							android:layout_marginTop="0.0dip"
+							android:src="@drawable/result_detail_ic_client"/>
+
+					<TextView
+							android:textSize="13.0dip"
+							android:ellipsize="end"
+							android:gravity="left"
+							android:id="@+id/clientLocationText"
+							android:layout_width="fill_parent"
+							style="@style/SpeedResultValue"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="59.0dip"
+							android:layout_marginTop="0.0dip"
+							android:text="位置详情"
+							android:lines="1"/>
+
+					<TextView
+							android:textSize="@dimen/font_size_medium"
+							android:ellipsize="end"
+							android:gravity="left"
+							android:id="@+id/clientLocationValueText"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="59.0dip"
+							android:text="没有位置信息"
+							style="@style/SpeedResultDetailValue"
+							android:layout_marginTop="19.0dip"
+							android:lines="1"/>
+				</RelativeLayout>
+
+				<RelativeLayout
+						android:paddingBottom="3.0dip"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="12.0dip">
+
+					<TextView
+							android:textSize="11.0dip"
+							android:ellipsize="end"
+							android:id="@+id/externalIpText"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="58.0dip"
+							android:text="内网IP"
+							android:lines="1"/>
+
+					<TextView
+							android:textSize="11.0dip"
+							android:ellipsize="end"
+							android:id="@+id/externalIpValueText"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="5.0dip"
+							android:lines="1"
+							android:layout_toRightOf="@id/externalIpText"
+							android:text="58.46.115.157"/>
+
+					<TextView
+							android:textSize="11.0dip"
+							android:ellipsize="end"
+							android:id="@+id/internalIpText"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="58.0dip"
+							android:layout_marginTop="15.0dip"
+							android:text="外网IP"
+							android:lines="1"/>
+
+					<TextView
+							android:textSize="11.0dip"
+							android:ellipsize="end"
+							android:id="@+id/internalIpValueText"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="5.0dip"
+							android:layout_marginTop="15.0dip"
+							android:lines="1"
+							android:layout_toRightOf="@id/internalIpText"
+							android:text="10.7.227.19, 192.168.1.125"/>
+				</RelativeLayout>
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout
+				android:gravity="center"
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:weightSum="2">
+
+			<Button
+					android:id="@+id/share"
+					android:background="@drawable/speed_result_button_left_shape"
+					android:textColor="@color/text_inverted"
+					android:layout_width="0.0dip"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:paddingRight="1dp"
+					android:text="分享"/>
+
+			<ImageView
+					android:layout_width="wrap_content"
+					android:layout_gravity="center"
+					android:layout_height="fill_parent"
+					android:background="@drawable/verticalline_speed"/>
+
+			<Button
+					android:id="@+id/dismiss"
+					android:background="@drawable/speed_result_button_right_shape"
+					android:textColor="@color/text_inverted"
+					android:layout_width="0.0dip"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="0dp"
+					android:layout_weight="1"
+					android:paddingLeft="1dp"
+					android:text="关闭"/>
+		</LinearLayout>
+	</LinearLayout>
+</RelativeLayout>

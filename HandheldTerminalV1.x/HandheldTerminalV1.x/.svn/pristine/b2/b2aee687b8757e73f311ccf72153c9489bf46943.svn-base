@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+	<!-- 头像 -->
+	<FrameLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5.0dip"
+			android:layout_marginTop="30.0dip">
+
+		<com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+				android:id="@+id/carriec_thumbnail"
+				android:layout_width="42.0dip"
+				android:layout_height="42.0dip"
+				bootstrap:bct_image="@drawable/wlan"
+				bootstrap:bct_size="small"
+				android:layout_margin="8dp"/>
+	</FrameLayout>
+
+	<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:orientation="vertical">
+		<!-- 顶部 -->
+		<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:orientation="horizontal">
+
+			<TextView
+					android:id="@+id/speed_item_name"
+					android:text=""
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:textColor="@color/text_inverted"
+					android:textSize="16.0sp"
+					android:textStyle="bold"
+					android:singleLine="true"/>
+
+			<TextView
+					android:id="@+id/speed_item_createTime"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="5.0dip"
+					android:layout_marginRight="5.0dip"
+					android:text=""
+					android:textColor="@color/text_light"
+					android:textSize="12.0sp"/>
+		</LinearLayout>
+		<!-- 顶部 -->
+		<!-- 正文 -->
+		<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="2.0dip"
+				android:paddingLeft="5.0sp"
+				android:paddingRight="5.0sp"
+				android:orientation="vertical">
+
+			<TextView
+					android:id="@+id/speed_item_content"
+					android:text=""
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textColor="@color/text"
+					android:textSize="16.0sp"/>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

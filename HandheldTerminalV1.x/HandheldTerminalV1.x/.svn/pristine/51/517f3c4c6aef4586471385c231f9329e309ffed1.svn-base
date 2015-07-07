@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+	<!--android:background="#50000000"-->
+	<TextView
+			android:text="暂无数据"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp"
+			android:paddingTop="2dp"
+			android:paddingBottom="2dp"
+			android:textColor="@color/text"
+			android:textSize="@dimen/font_size_xlarge"
+			android:layout_centerInParent="true"
+			android:gravity="center"/>
+</RelativeLayout>

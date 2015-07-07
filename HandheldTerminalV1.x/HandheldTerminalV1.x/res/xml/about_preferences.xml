@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="版本"
+                android:summary="版本 2.0.2"/>
+    <Preference android:title="官方网站"
+                android:summary="www.datang.com"/>
+</PreferenceScreen>

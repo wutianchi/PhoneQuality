@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:padding="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+	<TextView
+			android:id="@+id/speed_server_nettype"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text=""
+			android:textSize="@dimen/font_size_large"/>
+
+	<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:weightSum="2">
+
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="03-23 20:59"
+				android:id="@+id/speed_date"
+				android:textColor="@color/text_inverted"/>
+
+		<TextView
+				android:drawableLeft="@drawable/net_speed_record_download_highlighted"
+				android:paddingLeft="18dp"
+				android:drawablePadding="5dp"
+				android:layout_width="0.0dip"
+				android:layout_height="wrap_content"
+				android:text="3238.1 KB/s"
+				android:layout_weight="1"
+				android:id="@+id/speed_download"
+				android:textColor="@color/text_inverted"/>
+
+		<TextView
+				android:drawableLeft="@drawable/net_speed_record_upload_highlighted"
+				android:paddingLeft="5dp"
+				android:drawablePadding="5dp"
+				android:layout_width="0.0dip"
+				android:layout_height="wrap_content"
+				android:text="481.5 KB/s"
+				android:layout_weight="1"
+				android:id="@+id/speed_upload"
+				android:textColor="@color/text_inverted"/>
+	</LinearLayout>
+
+</LinearLayout>

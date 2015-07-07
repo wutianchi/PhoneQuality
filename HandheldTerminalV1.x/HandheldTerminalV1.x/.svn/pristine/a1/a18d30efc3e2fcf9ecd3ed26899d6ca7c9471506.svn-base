@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<integer name="default_fragment_index">0</integer>
+	<!-- 导航菜单 -->
+	<string-array name="nav_menu">
+		<item>@string/nav_menu_netspeed</item>
+		<item>@string/nav_menu_filedownload</item>
+	</string-array>
+
+	<string-array name="nav_menu_fragment_classname">
+		<item>@string/netspeed_fragment</item>
+		<item>@string/file_download_page_fragment</item>
+	</string-array>
+
+	<string-array name="nav_flag">
+		<item>@drawable/menu_icon_traffic</item>
+		<item>@drawable/menu_icon_location</item>
+		<item>@drawable/menu_icon_clock</item>
+	</string-array>
+
+	<!-- 宽带测速 -->
+	<string-array name="netspeed_tab">
+		<item>@string/nav_menu_netspeed_speed</item>
+		<item>@string/nav_menu_speed_server_choice</item>
+		<item>@string/nav_menu_netspeed_history</item>
+	</string-array>
+
+	<string-array name="netspeed_tab_classname">
+		<item>@string/nav_menu_netspeed_speed_fragment</item>
+		<item>@string/speed_server_choice_fragment</item>
+		<item>@string/nav_menu_netspeed_history_fragment</item>
+	</string-array>
+
+	<!-- 文件下载 -->
+	<string-array name="filedownload_tab">
+		<item>@string/nav_menu_filedownload_download</item>
+		<item>@string/nav_menu_filedownload_choice</item>
+	</string-array>
+
+	<string-array name="filedownload_tab_classname">
+		<item>@string/file_download_download_fragment</item>
+		<item>@string/file_download_choice_fragment</item>
+	</string-array>
+
+	<integer-array name="wifiChannels">
+		<item>@color/color1</item>
+		<item>@color/color2</item>
+		<item>@color/color3</item>
+		<item>@color/color4</item>
+		<item>@color/color5</item>
+		<item>@color/color6</item>
+		<item>@color/color7</item>
+		<item>@color/color8</item>
+		<item>@color/color9</item>
+	</integer-array>
+	<!-- 通话失败原因定义列表 -->
+	<string-array name="drop_case_error">
+		<item>NOT_DISCONNECTED</item>
+		<item>CONGESTION</item>
+		<item>LOST_SIGNAL</item>
+		<item>OUT_OF_SERVICE</item>
+		<item>POWER_OFF</item>
+		<item>LIMIT_EXCEEDED</item>
+		<item>IMEI_NOT_ACCEPTED</item>
+		<item>ERROR_UNSPECIFIED</item>
+	</string-array>
+</resources>

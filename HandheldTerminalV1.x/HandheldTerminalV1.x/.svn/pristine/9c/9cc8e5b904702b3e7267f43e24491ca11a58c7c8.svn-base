@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="@dimen/list_item_height"
+              android:paddingLeft="@dimen/padding2"
+              android:paddingRight="@dimen/padding2"
+              android:gravity="center_vertical">
+
+	<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/ssid"
+			android:textColor="@color/text_inverted"/>
+
+	<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:gravity="center_vertical"
+			android:weightSum="10">
+
+		<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/wifi_vector"
+				android:layout_gravity="center_vertical"
+				android:id="@+id/status"/>
+
+		<TextView
+				android:layout_width="0.0dip"
+				android:layout_height="wrap_content"
+				android:text="信道"
+				android:textColor="@color/text"
+				android:gravity="center"
+				android:layout_weight="1"/>
+
+		<TextView
+				android:layout_width="0.0dip"
+				android:layout_height="wrap_content"
+				android:textColor="@color/blue"
+				android:gravity="center"
+				android:layout_weight="2"
+				android:id="@+id/channel"/>
+
+		<TextView
+				android:layout_width="0.0dip"
+				android:layout_height="wrap_content"
+				android:textColor="@color/text"
+				android:gravity="center"
+				android:layout_weight="2"
+				android:id="@+id/power"/>
+
+		<LinearLayout
+				android:layout_width="0.0dip"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_weight="5"
+				android:gravity="center_horizontal"
+				android:paddingLeft="@dimen/padding2b"
+				android:paddingRight="@dimen/padding2b">
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:gravity="center_vertical">
+
+				<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text=""
+						android:id="@+id/company"
+						android:visibility="gone"/>
+			</LinearLayout>
+
+			<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+				<ProgressBar
+						style="?android:attr/progressBarStyleHorizontal"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:maxHeight="12dp"
+						android:minHeight="12dp"
+						android:progressDrawable="@drawable/progressbar_blue_layer"
+						android:id="@+id/signal"
+						android:max="45"
+						android:indeterminate="false"/>
+
+				<TextView
+						android:id="@+id/signal_text"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerInParent="true"
+						android:textColor="@color/text"
+						android:textSize="@dimen/font_size_micro"
+						android:height="12dp"/>
+			</RelativeLayout>
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

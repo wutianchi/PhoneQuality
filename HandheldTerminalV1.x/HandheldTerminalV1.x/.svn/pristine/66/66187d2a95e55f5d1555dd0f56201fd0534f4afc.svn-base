@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="pager_background">#2c2f39</color>
+	<color name="pager_background_alternate">#313035</color>
+	<color name="left_drawer_divider">#333640</color>
+
+	<color name="text">#FCFCFC</color>
+	<color name="text_light">#999999</color>
+	<color name="text_dark">#000000</color>
+	<color name="text_inverted">#FFFFFF</color>
+	<color name="text_title">#DFDFDF</color>
+	<color name="text_shadow">#000000</color>
+
+	<color name="translucent">#66666666</color>
+	<color name="transparent">#00000000</color>
+
+	<color name="traffic_bar_color_blue">#5d9cd2</color>
+	<color name="traffic_bar_color_yellow">#ffb83d</color>
+	<color name="traffic_bar_color_red">#ed5749</color>
+	<color name="traffic_rim_color">#b8c0cf</color>
+
+	<color name="white">#FFFFFF</color>
+	<color name="blue">#ff00aff0</color>
+	<color name="dark_grey">#ff33353a</color>
+	<color name="mid_blue">#ff66cff6</color>
+	<color name="light_blue">#ffb3e7fb</color>
+	<color name="light_grey">#ff93999d</color>
+	<color name="mid_grey">#ff6e6e73</color>
+	<color name="red">#ffed5749</color>
+	<color name="mid_red">#ffed5749</color>
+	<color name="dark_cyan">#00a651</color>
+	<color name="forestgreen">#228B22</color>
+	<!--森林绿 -->
+	<color name="color1">#1fb6ed</color>
+	<color name="color2">#0066FF</color>
+	<color name="color3">#ff8936</color>
+	<color name="color4">#177cb0</color>
+	<color name="color5">#519a73</color>
+	<color name="color6">#25f8cb</color>
+	<color name="color7">#ed5749</color>
+	<color name="color8">#30dff3</color>
+	<color name="color9">#41555d</color>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">网络质量监测</string>
+
+	<string name="nav_drawer_open">打开导航菜单</string>
+	<string name="nav_drawer_close">关闭导航菜单</string>
+
+	<!-- 网络信号模块 -->
+	<string name="nav_menu_signal">网络信号</string>
+	<string name="nav_menu_signal_realtime">实时</string>
+	<string name="nav_menu_signal_hour">小时</string>
+	<string name="nav_menu_signal_today">当天</string>
+	<string name="nav_menu_signal_all">全部</string>
+	<string name="signal_fragment">com.cattsoft.phone.quality.ui.fragments.signal.SignalFragment</string>
+
+	<!-- 位置模块 -->
+	<string name="nav_menu_location">我的位置</string>
+	<string name="location_fragment">com.cattsoft.phone.quality.ui.fragments.location.LocationFragment</string>
+
+	<!-- 掉话率模块 -->
+	<string name="nav_menu_dcr">掉话率</string>
+	<string name="dcr_fragment">com.cattsoft.phone.quality.ui.fragments.dcr.DropCallRateFragment</string>
+
+	<!-- 操作记录模块 -->
+	<string name="nav_menu_record">操作记录</string>
+	<string name="nav_menu_record_voice">语音</string>
+	<string name="nav_menu_record_sms">短信</string>
+	<string name="nav_menu_record_online">上网</string>
+
+	<!-- 网络测速模块 -->
+	<string name="nav_menu_netspeed">网络测速</string>
+	<string name="nav_menu_netspeed_speed">测速</string>
+	<string name="nav_menu_netspeed_speed_fragment">com.cattsoft.phone.quality.ui.fragments.speed.TesterFragment</string>
+	<string name="nav_menu_netspeed_history">历史</string>
+	<string name="nav_menu_netspeed_history_fragment">com.cattsoft.phone.quality.ui.fragments.speed.HistoryFragment</string>
+	<string name="nav_menu_netspeed_share">分享</string>
+
+	<string name="netspeed_pop_up_curr_speed">当前网速相当于</string>
+	<string name="netspeed_pop_up_guess_speed">%1M宽带</string>
+	<string name="netspeed_pop_up_default_speed_server">未知测速服务器</string>
+	<string name="netspeed_pop_up_default_nework_type">未知网络类型</string>
+	<string name="netspeed_fragment">com.cattsoft.phone.quality.ui.fragments.speed.SpeedFragment</string>
+
+	<string name="netspeed_start_test">开始测速</string>
+	<string name="netspeed_ping_txt">获取时延中...</string>
+	<string name="netspeed_download_txt">测试下行带宽中...</string>
+	<string name="netspeed_upload_txt">测试上行带宽中...</string>
+
+	<!-- 文件下载模块 -->
+	<string name="nav_menu_filedownload">文件下载</string>
+	<string name="file_download_page_fragment">com.cattsoft.phone.quality.ui.fragments.filedownload.FileDownloadPageFragment</string>
+
+	<string name="nav_menu_filedownload_download">测试</string>
+	<string name="file_download_download_fragment">com.cattsoft.phone.quality.ui.fragments.filedownload.FileDownloadFragment</string>
+
+	<string name="nav_menu_filedownload_choice">设置</string>
+	<string name="file_download_choice_fragment">com.cattsoft.phone.quality.ui.fragments.filedownload.FileChoiceFragment</string>
+
+	<!-- wifi 分析模块 -->
+	<string name="nav_menu_wifi">WiFi分析</string>
+	<string name="nav_menu_wifi_spectral">频谱</string>
+	<string name="nav_menu_wifi_list">列表</string>
+	<string name="nav_menu_wifi_indicator">仪表</string>
+	<string name="wifi_fragment">com.cattsoft.phone.quality.ui.fragments.wifi.WifiFragment</string>
+
+	<!-- 业务监测模块 -->
+	<string name="nav_menu_statistics">业务监测</string>
+	<string name="nav_menu_statistics_voice">语音</string>
+	<string name="nav_menu_statistics_sms">短信</string>
+	<string name="nav_menu_statistics_traffic">流量</string>
+	<string name="statistics_fragment">com.cattsoft.phone.quality.ui.fragments.stats.StatisticsFragment</string>
+
+	<!-- 伪基站识别模块 -->
+	<string name="nav_menu_pseudo_base">伪基站识别</string>
+	<string name="pseudo_base_fragment">com.cattsoft.phone.quality.ui.fragments.pseudo.PseudoBaseFragment</string>
+
+	<!-- 测速服务器设置 -->
+	<string name="nav_menu_speed_server_choice">设置</string>
+	<string name="speed_server_choice_fragment">com.cattsoft.phone.quality.ui.fragments.menu.SpeedServerChoiceFragment</string>
+
+	<!-- 设置 -->
+	<string name="about">关于</string>
+	<string name="settings">设置</string>
+
+	<!-- 显示单位 -->
+	<string name="kbitps">Kbps</string>
+	<string name="kbitSec">Kb/s</string>
+	<string name="kMbitps">Mbps</string>
+	<string name="kMbitSec">Mb/s</string>
+
+	<string name="kByteps">KBps</string>
+	<string name="kByteSec">KB/s</string>
+	<string name="kMByteps">MBps</string>
+	<string name="kMByteSec">MB/s</string>
+	<string name="second">s</string>
+	<string name="minute">min</string>
+	<string name="filesize_unit">MB</string>
+
+	<string name="traffic_prompt_date">选择日期</string>
+
+	<string name="traffic_expend_use">使用 %1$.1f </string>
+	<string name="traffic_unit_kb">MB</string>
+	<string name="traffic_unit_mb">MB</string>
+	<string name="traffic_used_month">%1$sM</string>
+
+	<string name="null_string">null</string>
+	<string name="float_zero">0.0</string>
+	<string name="zero">0</string>
+	<string name="file_download_max_speed_text">最大速度</string>
+	<string name="file_download_avg_speed_text">平均速度</string>
+	<string name="netspeed_pop_up_guess_unit">Mb/s宽带</string>
+</resources>

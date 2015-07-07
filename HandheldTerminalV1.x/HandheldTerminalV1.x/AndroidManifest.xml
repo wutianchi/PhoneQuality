@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+		  package="com.cattsoft.phone.quality"
+		  android:installLocation="internalOnly"
+		  android:versionCode="2"
+		  android:versionName="2.0.5">
+
+	<instrumentation android:name="android.test.InstrumentationTestRunner"
+					 android:targetPackage="com.cattsoft.phone.quality"
+					 android:label="Test"/>
+
+	<uses-sdk android:minSdkVersion="15"
+			  android:targetSdkVersion="19"/>
+
+	<!-- 读取设备信息 -->
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<!-- 网络权限 -->
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<!-- 网络状态访问 -->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<!-- 位置信息 -->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES"/>
+	<uses-permission android:name="android.permission.ACCESS_FIND_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+	<!-- 主叫 -->
+	<uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+	<!-- 读取日志 -->
+	<uses-permission android:name="android.permission.READ_LOGS"/>
+	<!-- 读取短信记录 -->
+	<uses-permission android:name="android.permission.READ_SMS"/>
+	<!-- 通话记录 -->
+	<uses-permission android:name="android.permission.READ_CONTACTS"/>
+	<!-- WIFI 扫描 -->
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+	<!-- 系统启动通知 -->
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<!-- 修改和读取数据 -->
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+	<application android:name=".QualityApplication"
+				 android:label="@string/app_name"
+				 android:icon="@drawable/ic_launcher"
+				 android:theme="@style/Theme.Dark">
+		<uses-library android:name="android.test.runner"/>
+
+		<!-- 活动声明 -->
+		<activity android:name=".SplashActivity"
+				  android:theme="@style/Theme.Dark.Splash"
+				  android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+				  android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity android:name=".PhoneQualityActivity"
+				  android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+				  android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity
+				android:name=".AboutActivity"
+				android:theme="@style/Setting"
+				android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+				android:label="@string/about"/>
+		<activity
+				android:name=".SettingActivity"
+				android:theme="@style/Setting"
+				android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+				android:label="@string/settings"/>
+		<!-- 广播接收器声明 -->
+		<!--<receiver android:name=".service.receiver.NetActivityReceiver">-->
+		<!--<intent-filter android:priority="2147483647">-->
+		<!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>-->
+		<!--<action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>-->
+		<!--<action android:name="com.cattsoft.phone.service.started"/>-->
+		<!--</intent-filter>-->
+		<!--</receiver>-->
+		<!--<receiver android:name=".service.receiver.BootCompleteReceiver">-->
+		<!--<intent-filter android:priority="2147483647">-->
+		<!--<action android:name="android.intent.action.BOOT_COMPLETED"/>-->
+		<!--</intent-filter>-->
+		<!--</receiver>-->
+		<!--<receiver android:name=".service.receiver.ReportReceiver">-->
+		<!--<intent-filter>-->
+		<!--<action android:name="com.cattsoft.phone.REPORT_ACTION"/>-->
+		<!--<action android:name="com.cattsoft.phone.REPORT_CALL_ACTION"/>-->
+		<!--<action android:name="com.cattsoft.phone.REPORT_SMS_ACTION"/>-->
+		<!--<action android:name="com.cattsoft.phone.REPORT_UPLOAD_ACTION"/>-->
+		<!--</intent-filter>-->
+		<!--</receiver>-->
+		<!--<receiver android:name=".service.receiver.AppChangedReceiver">-->
+		<!--<intent-filter android:priority="2147483647">-->
+		<!--<action android:name="android.intent.action.PACKAGE_ADDED"/>-->
+		<!--<action android:name="android.intent.action.PACKAGE_REPLACED"/>-->
+		<!--<action android:name="android.intent.action.PACKAGE_REMOVED"/>-->
+
+		<!--<data android:scheme="package"/>-->
+		<!--</intent-filter>-->
+		<!--</receiver>-->
+		<!--<receiver android:name=".service.receiver.CallStateReceiver">-->
+		<!--<intent-filter android:priority="2147483647">-->
+		<!--<action android:name="android.intent.action.NEW_OUTGOING_CALL"/>-->
+		<!--<action android:name="android.intent.action.PHONE_STATE"/>-->
+		<!--</intent-filter>-->
+		<!--</receiver>-->
+
+		<!-- 后台服务声明 -->
+		<!--<service android:name=".service.PhoneStateService" android:process=":state" android:label="CoreService">-->
+		<!--<intent-filter>-->
+		<!--<category android:name="android.intent.category.DEFAULT"/>-->
+		<!--<action android:name="com.cattsoft.phone.quality.CORE_SERVICE"/>-->
+		<!--</intent-filter>-->
+		<!--</service>-->
+		<!--<service android:name=".service.NetStateService" android:process=":state" android:label="NetStateService"/>-->
+		<!--<service android:name=".service.DropCallService" android:process=":state" android:label="DropCallService"/>-->
+		<!--<service android:name=".service.WifiScanService" android:process=":state" android:label="WifiScanService"/>-->
+		<!--<service android:name=".service.DataTunnelService" android:process=":state" android:label="DataTunnelService"/>-->
+		<!--<service android:name=".service.TrafficStatsService" android:process=":state"-->
+		<!--android:label="TrafficStatsService"/>-->
+		<!--<service android:name=".service.ReportService" android:process=":state" android:label="DataReport"/>-->
+		<!--<service android:name=".service.BaiduLocationService" android:process=":state" android:label="LocationService"/>-->
+		<!--<meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="K92VswFp6le5MHfmGGxqRRuZ"/>-->
+		<!--<service android:name="com.baidu.location.f" android:process=":loc" android:enabled="true"/>-->
+	</application>
+</manifest>

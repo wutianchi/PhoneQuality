@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.cattsoft.phone.quality.ui.widget.OverScrollView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+	<LinearLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+			android:id="@+id/rootView"
+			android:orientation="vertical"
+			android:background="#eef0f3"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+		<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="8dp"
+				android:paddingRight="8dp"
+				android:paddingTop="5dp"
+				android:id="@+id/speed_preview_layout">
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_weight="1"
+					android:orientation="horizontal"
+					android:layout_height="wrap_content"
+					android:gravity="center">
+
+				<ImageView
+						android:id="@+id/speed_ping_icon"
+						android:layout_width="32dp"
+						android:layout_height="wrap_content"
+						android:src="@drawable/net_speed_icon_ping_normal"
+						android:paddingLeft="10.0dip"
+						android:paddingRight="5.0dip"/>
+
+				<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:orientation="vertical"
+						android:layout_weight="1"
+						android:gravity="center_horizontal">
+
+					<TextView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center"
+							android:text="PING"
+							android:textColor="@color/text_dark"
+							android:paddingRight="5.0dip"/>
+
+					<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_horizontal">
+
+						<TextView
+								android:id="@+id/speed_ping"
+								android:layout_width="wrap_content"
+								android:textColor="@color/text_dark"
+								android:layout_height="wrap_content"
+								android:gravity="center"
+								android:text="0"
+								android:textSize="@dimen/font_size_xlarge"/>
+
+						<TextView
+								android:id="@+id/speed_ping_unit"
+								android:layout_width="wrap_content"
+								android:textColor="@color/text_light"
+								android:layout_height="wrap_content"
+								android:gravity="center"
+								android:text="ms"
+								android:textSize="@dimen/font_size_micro"/>
+
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+
+			<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:background="@drawable/stream_split_line"/>
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_weight="1"
+					android:orientation="horizontal"
+					android:layout_height="wrap_content"
+					android:gravity="center">
+
+				<ImageView
+						android:id="@+id/speed_download_icon"
+						android:layout_width="32dp"
+						android:layout_height="wrap_content"
+						android:src="@drawable/net_speed_icon_download_normal"
+						android:paddingLeft="10.0dip"
+						android:paddingRight="5.0dip"/>
+
+				<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:orientation="vertical"
+						android:layout_weight="1"
+						android:gravity="center_horizontal">
+
+					<TextView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:textColor="@color/text_dark"
+							android:gravity="center"
+							android:text="下载速率"
+							android:paddingRight="5.0dip"/>
+
+					<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_horizontal">
+
+						<TextView
+								android:id="@+id/speed_download"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:gravity="center"
+								android:text="0.0"
+								android:textColor="@color/text_dark"
+								android:textSize="@dimen/font_size_xlarge"/>
+
+						<TextView
+								android:id="@+id/speed_download_unit"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:gravity="center"
+								android:text="@string/kbitSec"
+								android:textColor="@color/text_light"
+								android:textSize="@dimen/font_size_micro"/>
+
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+
+			<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:background="@drawable/stream_split_line"/>
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_weight="1"
+					android:orientation="horizontal"
+					android:layout_height="wrap_content"
+					android:gravity="center">
+
+				<ImageView
+						android:id="@+id/speed_upload_icon"
+						android:layout_width="32dp"
+						android:layout_height="wrap_content"
+						android:src="@drawable/net_speed_icon_upload_normal"
+						android:paddingLeft="10.0dip"
+						android:paddingRight="5.0dip"/>
+
+				<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:orientation="vertical"
+						android:layout_weight="1"
+						android:gravity="center_horizontal">
+
+					<TextView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:textColor="@color/text_dark"
+							android:gravity="center"
+							android:text="上传速率"
+							android:paddingRight="5.0dip"/>
+
+					<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_horizontal">
+
+						<TextView
+								android:id="@+id/speed_upload"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:gravity="center"
+								android:text="0.0"
+								android:textColor="@color/text_dark"
+								android:textSize="@dimen/font_size_xlarge"/>
+
+						<TextView
+								android:id="@+id/speed_upload_unit"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:gravity="center"
+								android:text="@string/kbitSec"
+								android:textColor="@color/text_light"
+								android:textSize="@dimen/font_size_micro"/>
+
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+
+		<RelativeLayout
+				android:id="@+id/dial_layout"
+				android:layout_gravity="center"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+			<FrameLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+				<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:src="@drawable/net_speed_dial_mask"/>
+
+				<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:src="@drawable/net_speed_dial_background2"/>
+
+				<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:src="@drawable/net_speed_dial_grad"/>
+			</FrameLayout>
+
+			<TextView
+					android:id="@+id/net_speed_nettype"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="测试服务器"
+					android:layout_centerHorizontal="true"
+					android:paddingTop="@dimen/dial_type_top"
+					android:textColor="@color/text_dark"/>
+
+			<TextView
+					android:id="@+id/net_ssid_nettype"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text=""
+					android:layout_centerHorizontal="true"
+					android:textSize="@dimen/font_size_micro"
+					android:paddingTop="@dimen/dial_type_ssid_top"
+					android:textColor="@color/text_light"/>
+
+			<TextView
+					android:id="@+id/net_speed_avg_unit"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/kMbitps"
+					android:layout_centerInParent="true"
+					android:paddingTop="@dimen/dial_unit_top"
+					android:textSize="@dimen/font_size_medium"
+					android:textColor="@color/text_light"/>
+
+			<TextView
+					android:id="@+id/net_speed_avg"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="0"
+					android:layout_centerInParent="true"
+					android:paddingTop="@dimen/dial_speed_top"
+					android:textSize="@dimen/font_size_xxlarge"
+					android:textColor="@color/text_dark"/>
+
+			<ImageView
+					android:id="@+id/dial_pointer"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:src="@drawable/net_speed_dial_pointer"/>
+		</RelativeLayout>
+
+		<com.beardedhen.androidbootstrap.BootstrapButton
+				android:id="@+id/speed_action"
+				android:layout_gravity="center_horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="54dp"
+				android:layout_marginLeft="20dp"
+				android:layout_marginRight="20dp"
+				android:text="开始测速"
+				bootstrapbutton:bb_text_gravity="center"
+				bootstrapbutton:bb_roundedCorners="true"
+				bootstrapbutton:bb_type="primary"/>
+	</LinearLayout>
+</com.cattsoft.phone.quality.ui.widget.OverScrollView>
