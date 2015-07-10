@@ -241,11 +241,12 @@ public class UpDownAsyncTask extends AsyncTask<Integer, Integer, SpeedRecord> {
         // Use a post method.
         connection.setRequestMethod("POST");
         connection.setRequestProperty("Connection", "Keep-Alive");
+        connection.setRequestProperty("key", "3425d9b9-10ff-45d0-b23f-b3b3b64267cf");
         connection.setRequestProperty("Cache-Control", "no-cache");
         connection.setRequestProperty("Content-Type", "multipart/form-data;boundary=" + BOUNDARY);
         // 设置每次传输的流大小，可有效防止因内存不足崩溃
         // 用于在预先不知道内容长度时启用没有进行内部缓冲的 HTTP 请求正文的流。适用于大数据传输
-        connection.setChunkedStreamingMode(32);
+        connection.setChunkedStreamingMode(2048);
         connection.setInstanceFollowRedirects(true);
         connection.setRequestProperty("Charsert", "UTF-8");
         connection.setRequestProperty("Content-Type", CONTENT_TYPE_MULTIPART);

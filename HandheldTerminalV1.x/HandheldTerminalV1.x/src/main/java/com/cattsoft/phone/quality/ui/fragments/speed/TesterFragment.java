@@ -35,6 +35,7 @@ import com.google.inject.Inject;
 
 import org.joda.time.DateTime;
 
+import java.util.HashMap;
 import java.util.Random;
 
 import roboguice.inject.InjectResource;
@@ -303,6 +304,17 @@ public class TesterFragment extends RoboLazyFragment {
         if (0 != result.getFailure())
             return;
         try {
+            //上传报文
+            Packets.pack(getActivity(), Packets.REPORT_SPEED_TEMPLATE, new HashMap<String, String>() {{
+                put("type", "band");
+                put("server_id", String.valueOf(result.getId()));
+                put("ping", Float.toString(result.getPing()));
+                put("download_avg", String.valueOf(result.getDownload()));
+                put("download_max","-1");
+                put("upload_avg", String.valueOf(result.getUpload()));
+                put("upload_max","-1");
+            }});
+            doDial(0);
             final DismissablePopupWindow popupWindow = new DismissablePopupWindow(
                     getActivity().getApplicationContext(),
                     R.layout.layout_speed_result_popup
@@ -455,7 +467,7 @@ public class TesterFragment extends RoboLazyFragment {
 
         float d = 0;
         if (kbps > range[range.length - 1]) {
-            d = new Random().nextInt(10) + range[range.length - 1];
+            d = new Random().nextInt(10) + dial[range.length - 1];
         } else {
             for (int i = 1; i < range.length; i++) {
                 if (i <= range.length - 1) {

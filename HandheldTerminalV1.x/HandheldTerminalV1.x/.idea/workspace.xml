@@ -39,6 +39,7 @@
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_LOG_LEVEL" value="DEBUG" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.cattsoft.phone.quality" />
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="02143d9c-c35d-448d-869d-22adf710db23" name="Default" comment="">
@@ -64,6 +65,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/task/UpDownAsyncTask.java" afterPath="$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/task/UpDownAsyncTask.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/appcompat/appcompat.iml" afterPath="$PROJECT_DIR$/library/appcompat/appcompat.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/layout_file_download.xml" afterPath="$PROJECT_DIR$/res/layout/layout_file_download.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/layout_speed_history_item.xml" afterPath="$PROJECT_DIR$/res/layout/layout_speed_history_item.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/layout_speed_result_popup.xml" afterPath="$PROJECT_DIR$/res/layout/layout_speed_result_popup.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/layout_speed_server_choice.xml" afterPath="$PROJECT_DIR$/res/layout/layout_speed_server_choice.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/layout_speed_tester.xml" afterPath="$PROJECT_DIR$/res/layout/layout_speed_tester.xml" />
@@ -98,8 +100,44 @@
       <file leaf-file-name="TesterFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/ui/fragments/speed/TesterFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="12722" max-vertical-offset="13550">
-              <caret line="567" column="21" selection-start-line="567" selection-start-column="21" selection-end-line="567" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1950" max-vertical-offset="13825">
+              <caret line="125" column="28" selection-start-line="125" selection-start-column="16" selection-end-line="125" selection-end-column="28" />
+              <folding>
+                <element signature="e#3480#3510#1" expanded="true" />
+                <element signature="e#7159#7193#0" expanded="true" />
+                <element signature="e#7249#7279#0" expanded="true" />
+                <element signature="e#14527#14566#0" expanded="true" />
+                <element signature="e#19404#19443#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Devices.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/utils/Devices.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="3269" max-vertical-offset="3775">
+              <caret line="152" column="5" selection-start-line="152" selection-start-column="5" selection-end-line="152" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UpDownAsyncTask.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/task/UpDownAsyncTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="775" max-vertical-offset="8675">
+              <caret line="63" column="27" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BandWidthAsyncTask.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/task/BandWidthAsyncTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.83715594" vertical-offset="6960" max-vertical-offset="8350">
+              <caret line="306" column="32" selection-start-line="306" selection-start-column="32" selection-end-line="306" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -108,17 +146,17 @@
       <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/values/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="5.48" vertical-offset="487" max-vertical-offset="8675">
+            <state vertical-scroll-proportion="0.0" vertical-offset="487" max-vertical-offset="8675">
               <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MobileNetType.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MobileNetType.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/utils/MobileNetType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6516854" vertical-offset="743" max-vertical-offset="4500">
+            <state vertical-scroll-proportion="0.0" vertical-offset="818" max-vertical-offset="4500">
               <caret line="48" column="103" selection-start-line="48" selection-start-column="89" selection-end-line="48" selection-end-column="103" />
               <folding />
             </state>
@@ -144,22 +182,22 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/utils/LogUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/utils/LastLocation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/utils/PrefUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/utils/Devices.java" />
         <option value="$PROJECT_DIR$/res/layout/layout_speed_server_choice.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/ui/fragments/menu/SpeedServerChoiceFragment.java" />
         <option value="$PROJECT_DIR$/res/values/config.xml" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/res/drawable/speed_result_button_right_shape.xml" />
         <option value="$PROJECT_DIR$/res/layout/layout_speed_result_popup.xml" />
-        <option value="$PROJECT_DIR$/res/layout/layout_speed_history_item.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/ui/adapter/SpeedResultAdapter.java" />
         <option value="$PROJECT_DIR$/res/layout/layout_speed_tester.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/ui/fragments/filedownload/FileDownloadFragment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/utils/SpeedServerMatch.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/ui/fragments/speed/TesterFragment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/task/BandWidthAsyncTask.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/task/UpDownAsyncTask.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/cattsoft/phone/quality/test/BandWidthAsyncTaskTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/utils/Devices.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/ui/fragments/speed/TesterFragment.java" />
+        <option value="$PROJECT_DIR$/res/layout/layout_speed_history_item.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/task/UpDownAsyncTask.java" />
       </list>
     </option>
   </component>
@@ -240,7 +278,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -1034,6 +1071,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -1401,32 +1439,32 @@
     <option name="myMappingRoots">
       <list>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="E:\HandheldTerminalV1.x\HandheldTerminalV1.x" />
-          <option name="myCopyRoot" value="E:\HandheldTerminalV1.x\HandheldTerminalV1.x" />
+          <option name="myVcsRoot" value="E:\Documents\GitHub\PhoneQuality\HandheldTerminalV1.x\HandheldTerminalV1.x" />
+          <option name="myCopyRoot" value="E:\Documents\GitHub\PhoneQuality\HandheldTerminalV1.x\HandheldTerminalV1.x" />
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="E:\HandheldTerminalV1.x\HandheldTerminalV1.x\library\AndroidBootstrap" />
-          <option name="myCopyRoot" value="E:\HandheldTerminalV1.x\HandheldTerminalV1.x\library\AndroidBootstrap" />
+          <option name="myVcsRoot" value="E:\Documents\GitHub\PhoneQuality\HandheldTerminalV1.x\HandheldTerminalV1.x\library\AndroidBootstrap" />
+          <option name="myCopyRoot" value="E:\Documents\GitHub\PhoneQuality\HandheldTerminalV1.x\HandheldTerminalV1.x\library\AndroidBootstrap" />
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="E:\HandheldTerminalV1.x\HandheldTerminalV1.x\library\appcompat" />
-          <option name="myCopyRoot" value="E:\HandheldTerminalV1.x\HandheldTerminalV1.x\library\appcompat" />
+          <option name="myVcsRoot" value="E:\Documents\GitHub\PhoneQuality\HandheldTerminalV1.x\HandheldTerminalV1.x\library\appcompat" />
+          <option name="myCopyRoot" value="E:\Documents\GitHub\PhoneQuality\HandheldTerminalV1.x\HandheldTerminalV1.x\library\appcompat" />
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="E:\HandheldTerminalV1.x\HandheldTerminalV1.x\library\PagerSlidingTabStrip" />
-          <option name="myCopyRoot" value="E:\HandheldTerminalV1.x\HandheldTerminalV1.x\library\PagerSlidingTabStrip" />
+          <option name="myVcsRoot" value="E:\Documents\GitHub\PhoneQuality\HandheldTerminalV1.x\HandheldTerminalV1.x\library\PagerSlidingTabStrip" />
+          <option name="myCopyRoot" value="E:\Documents\GitHub\PhoneQuality\HandheldTerminalV1.x\HandheldTerminalV1.x\library\PagerSlidingTabStrip" />
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="E:\HandheldTerminalV1.x\HandheldTerminalV1.x\library\PullToRefresh" />
-          <option name="myCopyRoot" value="E:\HandheldTerminalV1.x\HandheldTerminalV1.x\library\PullToRefresh" />
+          <option name="myVcsRoot" value="E:\Documents\GitHub\PhoneQuality\HandheldTerminalV1.x\HandheldTerminalV1.x\library\PullToRefresh" />
+          <option name="myCopyRoot" value="E:\Documents\GitHub\PhoneQuality\HandheldTerminalV1.x\HandheldTerminalV1.x\library\PullToRefresh" />
         </SvnCopyRootSimple>
       </list>
     </option>
     <option name="myMoreRealMappingRoots">
       <list>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="E:\HandheldTerminalV1.x\HandheldTerminalV1.x" />
-          <option name="myCopyRoot" value="E:\HandheldTerminalV1.x\HandheldTerminalV1.x" />
+          <option name="myVcsRoot" value="E:\Documents\GitHub\PhoneQuality\HandheldTerminalV1.x\HandheldTerminalV1.x" />
+          <option name="myCopyRoot" value="E:\Documents\GitHub\PhoneQuality\HandheldTerminalV1.x\HandheldTerminalV1.x" />
         </SvnCopyRootSimple>
       </list>
     </option>
@@ -1479,11 +1517,12 @@
       <workItem from="1435222306595" duration="6199000" />
       <workItem from="1435436871158" duration="44429000" />
       <workItem from="1435914451291" duration="4673000" />
+      <workItem from="1436519713152" duration="3766000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="301844000" />
+    <option name="totallyTimeSpent" value="305610000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1364" height="726" extended-state="0" />
@@ -1504,12 +1543,13 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52816904" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4692443" sideWeight="0.4952381" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8260105" sideWeight="0.4952381" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962963" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32688928" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32796317" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30052724" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15992971" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27223927" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1518,7 +1558,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962963" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1582,10 +1621,33 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/android-sdk_r24.2-windows/android-sdk-windows/sources/android-19/org/json/JSONObject.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/ui/fragments/speed/TesterFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.4722223" vertical-offset="0" max-vertical-offset="18475">
-          <caret line="78" column="23" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="13125" max-vertical-offset="13700">
+          <caret line="567" column="21" selection-start-line="567" selection-start-column="21" selection-end-line="567" selection-end-column="21" />
+          <folding>
+            <element signature="e#3480#3510#1" expanded="true" />
+            <element signature="e#7159#7193#0" expanded="true" />
+            <element signature="e#7249#7279#0" expanded="true" />
+            <element signature="e#14527#14566#0" expanded="true" />
+            <element signature="e#19404#19443#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="487" max-vertical-offset="8675">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/utils/MobileNetType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4500">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1624,24 +1686,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/android-sdk_r24.2-windows/android-sdk-windows/sources/android-19/android/os/Parcelable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0720463" vertical-offset="2785" max-vertical-offset="3150">
-          <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Users/yushiwei/.m2/repository/com/android/support/support-v4/19.0.0/support-v4-19.0.0-sources.jar!/android/support/v4/app/FragmentActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.34131736" vertical-offset="1064" max-vertical-offset="21350">
           <caret line="74" column="29" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/android-sdk_r24.2-windows/android-sdk-windows/sources/android-19/android/os/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33233532" vertical-offset="1439" max-vertical-offset="18025">
-          <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1677,20 +1725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="161" max-vertical-offset="76425">
           <caret line="95" column="13" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/android-sdk_r24.2-windows/android-sdk-windows/sources/android-19/android/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.7817745" vertical-offset="170136" max-vertical-offset="474850">
-          <caret line="6922" column="25" selection-start-line="6922" selection-start-column="25" selection-end-line="6922" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/android-sdk_r24.2-windows/android-sdk-windows/sources/android-19/android/widget/ArrayAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="7361" max-vertical-offset="12050">
-          <caret line="335" column="13" selection-start-line="335" selection-start-column="13" selection-end-line="335" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1762,50 +1796,21 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/horizontalline_speed.9.png">
-      <provider editor-type-id="images">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="ninepatcheditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/layout_speed_result_popup.xml">
-      <provider editor-type-id="android-designer">
+      <provider editor-type-id="images">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5479115" vertical-offset="3527" max-vertical-offset="6400">
-          <caret line="150" column="48" selection-start-line="150" selection-start-column="48" selection-end-line="150" selection-end-column="48" />
-          <folding>
-            <element signature="e#5727#5763#0" expanded="false" />
-            <element signature="e#6790#6835#0" expanded="false" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/layout_speed_history.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.55282557" vertical-offset="225" max-vertical-offset="1425">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/ui/fragments/speed/HistoryFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="3125">
-          <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/ui/adapter/SpeedResultAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12184874" vertical-offset="192" max-vertical-offset="1850">
-          <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
-          <folding />
-        </state>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable/speed_result_button_right_shape.xml">
@@ -1835,20 +1840,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://D:/android-sdk_r24.2-windows/android-sdk-windows/sources/android-19/android/telephony/TelephonyManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33243242" vertical-offset="12752" max-vertical-offset="35000">
-          <caret line="555" column="18" selection-start-line="555" selection-start-column="18" selection-end-line="555" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/utils/Devices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1202" max-vertical-offset="3525">
-          <caret line="48" column="101" selection-start-line="48" selection-start-column="101" selection-end-line="48" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/ui/fragments/menu/SpeedServerChoiceFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="343" max-vertical-offset="5750">
@@ -1861,19 +1852,6 @@
         <state vertical-scroll-proportion="2.1262887" vertical-offset="0" max-vertical-offset="2175">
           <caret line="46" column="56" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/layout_speed_history_item.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0542169" vertical-offset="550" max-vertical-offset="1425">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="e#468#492#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1893,9 +1871,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/layout_speed_tester.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20289855" vertical-offset="1280" max-vertical-offset="4800">
           <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
@@ -1905,69 +1880,117 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://D:/android-sdk_r24.2-windows/android-sdk-windows/sources/android-19/java/net/URLConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="13720" max-vertical-offset="23850">
-          <caret line="613" column="24" selection-start-line="613" selection-start-column="24" selection-end-line="613" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/android-sdk_r24.2-windows/android-sdk-windows/sources/android-19/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="19345" max-vertical-offset="49150">
-          <caret line="825" column="18" selection-start-line="825" selection-start-column="18" selection-end-line="825" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/task/UpDownAsyncTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1375" max-vertical-offset="8650">
-          <caret line="72" column="21" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
-          <folding />
-        </state>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/cattsoft/phone/quality/test/BandWidthAsyncTaskTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.57865167" vertical-offset="569" max-vertical-offset="1025">
           <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/task/BandWidthAsyncTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39325842" vertical-offset="4860" max-vertical-offset="8400">
-          <caret line="211" column="51" selection-start-line="211" selection-start-column="51" selection-end-line="211" selection-end-column="51" />
-          <folding>
-            <element signature="e#6859#6860#0" expanded="true" />
-            <element signature="e#6922#6923#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/ui/fragments/speed/TesterFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="12722" max-vertical-offset="13550">
-          <caret line="567" column="21" selection-start-line="567" selection-start-column="21" selection-end-line="567" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.48" vertical-offset="487" max-vertical-offset="8675">
+        <state vertical-scroll-proportion="0.0" vertical-offset="487" max-vertical-offset="8675">
           <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/layout_speed_history_item.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.52" vertical-offset="1012" max-vertical-offset="1425">
+          <caret line="51" column="15" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
+          <folding>
+            <element signature="e#516#540#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/ui/adapter/SpeedResultAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.1067417" vertical-offset="1125" max-vertical-offset="1850">
+          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/ui/fragments/speed/HistoryFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71348315" vertical-offset="396" max-vertical-offset="3125">
+          <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/layout_speed_result_popup.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.7433333" vertical-offset="2627" max-vertical-offset="6400">
+          <caret line="150" column="48" selection-start-line="150" selection-start-column="48" selection-end-line="150" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/ui/fragments/speed/TesterFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1950" max-vertical-offset="13825">
+          <caret line="125" column="28" selection-start-line="125" selection-start-column="16" selection-end-line="125" selection-end-column="28" />
+          <folding>
+            <element signature="e#3480#3510#1" expanded="true" />
+            <element signature="e#7159#7193#0" expanded="true" />
+            <element signature="e#7249#7279#0" expanded="true" />
+            <element signature="e#14527#14566#0" expanded="true" />
+            <element signature="e#19404#19443#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/utils/Packets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="807" max-vertical-offset="6650">
+          <caret line="37" column="58" selection-start-line="37" selection-start-column="58" selection-end-line="37" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/utils/Devices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3169" max-vertical-offset="3775">
+          <caret line="152" column="5" selection-start-line="152" selection-start-column="5" selection-end-line="152" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/utils/MobileNetType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6516854" vertical-offset="743" max-vertical-offset="4500">
+        <state vertical-scroll-proportion="0.0" vertical-offset="743" max-vertical-offset="4500">
           <caret line="48" column="103" selection-start-line="48" selection-start-column="89" selection-end-line="48" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/task/UpDownAsyncTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="775" max-vertical-offset="8675">
+          <caret line="63" column="27" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cattsoft/phone/quality/task/BandWidthAsyncTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.83715594" vertical-offset="6960" max-vertical-offset="8350">
+          <caret line="306" column="32" selection-start-line="306" selection-start-column="32" selection-end-line="306" selection-end-column="32" />
           <folding />
         </state>
       </provider>

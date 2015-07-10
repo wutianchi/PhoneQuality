@@ -1,6 +1,7 @@
 package com.cattsoft.phone.quality.utils;
 
 import android.content.Context;
+import android.net.wifi.WifiManager;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
@@ -139,6 +140,16 @@ public class Devices {
         } else {
             return localip;
         }
+    }
+    public static String getWifiMac(Context context) {
+        try {
+            WifiManager wifi = (WifiManager) context
+                    .getSystemService(context.WIFI_SERVICE);
+            return wifi.getConnectionInfo().getMacAddress();
+        } catch (Exception e) {
+            //
+        }
+        return null;
     }
     public static int availableProcessors() {
         File file = new File("/sys/devices/system/cpu/");

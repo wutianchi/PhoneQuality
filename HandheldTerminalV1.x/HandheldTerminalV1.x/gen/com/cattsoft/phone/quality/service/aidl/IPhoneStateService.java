@@ -2,7 +2,7 @@
 
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: E:\\HandheldTerminalV1.x\\HandheldTerminalV1.x\\src\\main\\java\\com\\cattsoft\\phone\\quality\\service\\aidl\\IPhoneStateService.aidl
+ * Original file: E:\\Documents\\GitHub\\PhoneQuality\\HandheldTerminalV1.x\\HandheldTerminalV1.x\\src\\main\\java\\com\\cattsoft\\phone\\quality\\service\\aidl\\IPhoneStateService.aidl
  */
 package com.cattsoft.phone.quality.service.aidl;
 /**
